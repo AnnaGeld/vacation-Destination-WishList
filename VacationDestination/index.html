@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vacation Destinations WishList</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="title">Vacation Destination Wishlist</h1>
+      <p></p>
+    </header>
+    <main>
+      <form id="destination_details_form">
+        <label for="name">Destionation name</label>
+        <input type="text" id="name" required placeholder="Provide a name" />
+
+        <label for="location">Location</label>
+        <input
+          type="text"
+          id="location"
+          required
+          placeholder="where is this destination"
+        />
+
+        <label for="photo">Photo</label>
+        <input type="url" id="photo" placeholder="Provide a URL" />
+
+        <label for="description">Destination description</label>
+        <textarea
+          id="description"
+          cols="10"
+          rows="5"
+          placeholder="Describe it"
+        ></textarea>
+        <button class="button" type="submit">Add to list</button>
+      </form>
+
+      <article>
+        <h2 id="title">Please Enter Destination Details</h2>
+        <div id="destinations_container">
+          <!-- content generator by JS -->
+          <!-- <div class="card">
+            <img src="images/signpost.jpg" alt="imgagg" />
+            <div class="card-body">
+              <h3>destination Name</h3>
+              <h4>Destination Location</h4>
+              <p class="card-text">Destinaton description</p>
+              <button>remove</button>
+            </div>
+          </div> -->
+        </div>
+      </article>
+    </main>
+
+    <!-- Our JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
